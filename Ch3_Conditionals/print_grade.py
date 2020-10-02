@@ -1,8 +1,10 @@
+# To display grades using score
+
 prompt = 'Enter score:'
 score = input(prompt)
 try:
-    if float(score) > 1.0:
-        print('Bad score')
+    if float(score) > 1.0:      
+        print('Invalid score')
     elif float(score) >= 0.9:
         print('A')
     elif float(score) >= 0.8:
@@ -12,6 +14,6 @@ try:
     elif float(score) >= 0.6:
         print('D')
     else:
-        print('F')
+        print('Fail')
 except:
-    print('Bad score')
+    print('Score is not valid')
